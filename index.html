@@ -50,6 +50,17 @@ document.getElementById("cpButton").onclick = function(){
     value: 9.2,
     currency: 'USD',})
  }
+document.getElementById("ebButton").onclick = function(){
+    ttq.identify({
+    email: document.getElementById("emailInput").value,
+})
+    ttq.track('ClickButton',{  
+    content_id: '302',
+    quantity: 1,
+    price: 8,
+    value: 9.2,
+    currency: 'USD',})
+ }
 	
 </script>
 
